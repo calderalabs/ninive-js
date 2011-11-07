@@ -1,0 +1,73 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url('/images/stripes.png');
+	background-repeat: repeat-x;
+	font-family: "Lucida Grande", "Luxi Sans", "Trebuchet MS", "Bitstream Vera Sans", helvetica, verdana, arial, sans-serif;
+	font-size: small;
+	background-color: #ddd;
+}
+
+#container {
+	background-color: white;
+	width: 948px;
+	margin: 0 auto;
+}
+
+#container-wrapper {
+	width: 1048px;
+	margin: 0 auto;
+	background-image: url("/images/shadow.png");
+}
+
+
+#module {
+	margin-bottom: .6em;
+	padding: 0.8em;
+	padding-bottom: 0;
+}
+
+#composition {
+	padding: 10px;
+	position: relative;
+}
+
+#materials .material {
+	line-height: 30px;
+	display: block;
+	padding: 7px 7px 7px 0;
+}
+
+#materials .color-preview {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+#properties {
+	height: 280px;
+	width: 620px;
+	float: left;
+}
+
+input {
+	margin: 0.4em;
+	padding: 0.2em;
+}
+
+#preview {
+	float: right;
+	border: 1px solid #aaaaaa;
+	width: 280px;
+}
+
+.toolbar {
+	background-image: url("/images/black.png");
+	position: absolute;
+	top: 0;
+	width: 928px;
+	border: 1px solid #333;
+}

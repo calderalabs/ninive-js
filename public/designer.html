@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <title>Ninive Designer</title>
+
+		<link type="text/css" rel="stylesheet" href="/javascripts/jquery/themes/base/ui.all.css" />
+		<link type="text/css" rel="stylesheet" href="/stylesheets/designer.css" />
+		
+		<!--[if lt IE 7]><script type="text/javascript" src="/javascripts/unitpngfix.js"></script><![endif]-->
+		<!--[if IE]><script type="text/javascript" src="/javascripts/excanvas.js"></script><![endif]-->
+		
+		<script type="text/javascript" src="/javascripts/jquery/jquery-1.4.2.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery/jquery.cycle.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery/ui/jquery-ui-1.7.2.custom.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery/jquery.rightClick.js"></script>
+		<script type="text/javascript" src="/javascripts/designer/sylvester.js"></script>
+
+		<script type="text/javascript" src="/javascripts/designer.js"></script>
+		<script type="text/javascript" src="/javascripts/designer/math.js"></script>
+		<script type="text/javascript" src="/javascripts/designer/surface.js"></script>
+		<script type="text/javascript" src="/javascripts/designer/shape.js"></script>
+		<script type="text/javascript" src="/javascripts/designer/module.js"></script>
+		<script type="text/javascript" src="/javascripts/designer/grid.js"></script>
+    </head>
+    <body id="citera-studio-ninive">
+    	<div id="container-wrapper">
+	    	<div id="container">
+				<div id="content">
+		        	<div id="module">
+					    <div id="properties">
+					        <ul>
+					            <li>
+					                <a href="#sizes">Dimensioni</a>
+					            </li>
+					            <li>
+					                <a href="#materials">Materiali</a>
+					            </li>
+					        </ul>
+					        <div id="sizes">
+					            <p>
+					                <label>
+					                    Lunghezza:
+					                </label>
+					                <input type="radio" name="width" value="30" checked="checked" />30 cm<input type="radio" name="width" value="60" />60 cm
+					            </p>
+					            <p>
+					                <label>
+					                    Larghezza:
+					                </label>
+					                <input type="radio" name="depth" value="30" checked="checked" />30 cm<input type="radio" name="depth" value="60" />60 cm
+					            </p>
+					            <p>
+					                <label>
+					                    Altezza:
+					                </label>
+					                <input type="radio" name="height" value="25" checked="checked" />25 cm<input type="radio" name="height" value="45" />45 cm<input type="radio" name="height" value="65" />65 cm
+					            </p>
+					        </div>
+
+					        <div id="materials">
+					            <span class="material"><input type="radio" name="material" value="#C87137" checked="checked" /><span class="color-preview" style="background-color: #C87137;">&nbsp;</span> Rame</span>
+					            <span class="material"><input type="radio" name="material" value="#C8BEB7" /><span class="color-preview" style="background-color: #C8BEB7;">&nbsp;</span> Alluminio</span>
+					            <span class="material"><input type="radio" name="material" value="#DECD87" /><span class="color-preview" style="background-color: #DECD87;">&nbsp;</span> Plastica</span>
+					        </div>
+					    </div>
+
+					    <div id="preview" class="ui-corner-all">
+					        <canvas id="preview-surface" width="280" height="280">
+					            Il tuo browser non supporta canvas!
+					        </canvas>
+					    </div>
+					    <div style="clear: both;">
+					    </div>
+					</div>
+
+					<div id="composition" class="ui-corner-all">
+					    <div class="toolbar ui-corner-all">
+					        <input type="button" name="zoomIn" value="+" /><input type="button" name="zoomOut" value="-" /><input type="button" name="rotateLeft" value="&lt;" /><input type="button" name="rotateRight" value="&gt;" />
+
+							<div class="actions" style="display: inline">
+					            <input type="button" name="drag" value="Esplora" /><input type="button" name="pick" value="Posiziona" /><input type="button" name="delete" value="Elimina" />
+					        </div>
+					    </div>
+
+					    <canvas id="composition-surface" width="928" height="1024">
+					        Il tuo browser non supporta canvas!
+					    </canvas>
+					</div>
+				</div>
+				
+				<div id="footer">
+					Copyright &copy; 2010 Eugenio Depalo. Tutti i diritti riservati.
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
